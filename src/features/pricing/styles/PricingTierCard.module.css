@@ -1,0 +1,142 @@
+.tierCard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  position: relative;
+  background: white;
+}
+
+.tierCard:hover {
+  box-shadow: 0 12px 24px rgba(30, 58, 138, 0.1);
+  transform: translateY(-4px);
+}
+
+.highlighted {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.tierHeader {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.tierName {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0 0 8px 0;
+}
+
+.tierDescription {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.priceSection {
+  margin-bottom: 32px;
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+
+.amount {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1e3a8a;
+  line-height: 1;
+}
+
+.period {
+  font-size: 14px;
+  color: #64748b;
+  margin-left: 8px;
+}
+
+.savingsText {
+  font-size: 12px;
+  color: #10b981;
+  font-weight: 600;
+  margin: 8px 0 0 0;
+}
+
+.priceDetail {
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 8px 0 0 0;
+}
+
+.ctaButton {
+  margin-bottom: 32px;
+  font-weight: 600;
+  height: 44px;
+}
+
+.featuresSection {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.featuresTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+}
+
+.featureItem {
+  padding: 8px 0 !important;
+  border-bottom: none !important;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.addonsSection {
+  padding-top: 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.addonsTitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+}
+
+.addonItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.addonPrice {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+@media (max-width: 768px) {
+  .tierName {
+    font-size: 20px;
+  }
+
+  .amount {
+    font-size: 32px;
+  }
+}

@@ -1,0 +1,107 @@
+:root {
+  --color-primary: #1E3A8A;
+  --color-secondary: #0EA5E9;
+  --color-bg: #F8FAFC;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+  --color-text: #1E293B;
+  --color-border: #E2E8F0;
+  --color-white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.ant-layout {
+  background-color: var(--color-bg);
+}
+
+.ant-layout-content {
+  background-color: var(--color-bg);
+}
+
+.ant-layout-sider {
+  background-color: var(--color-white);
+}
+
+.ant-menu {
+  background-color: var(--color-white);
+}
+
+.ant-menu-item-selected {
+  background-color: #EFF6FF !important;
+  border-right: 3px solid var(--color-primary);
+}
+
+.ant-menu-submenu-selected > .ant-menu-submenu-title {
+  color: var(--color-primary) !important;
+}
+
+/* 스크롤바 스타일 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* 반응형 설정 */
+@media (max-width: 768px) {
+  .ant-layout-header {
+    padding: 0 16px;
+  }
+
+  .ant-layout-content {
+    padding: 12px;
+  }
+}
+
+/* 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ant-menu-item,
+.ant-menu-submenu {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 포커스 상태 */
+.ant-menu-item:focus-visible,
+.ant-menu-submenu-title:focus-visible {
+  outline: 2px solid var(--color-secondary);
+  outline-offset: -2px;
+}

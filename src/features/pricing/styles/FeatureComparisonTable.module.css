@@ -1,0 +1,47 @@
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 24px;
+}
+
+.comparisonTable {
+  width: 100%;
+}
+
+.comparisonTable :global(.ant-table) {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparisonTable :global(.ant-table-thead > tr > th) {
+  background-color: #f8fafc;
+  color: #1e3a8a;
+  font-weight: 700;
+  border-bottom: 2px solid #e2e8f0;
+  padding: 16px !important;
+}
+
+.comparisonTable :global(.ant-table-tbody > tr > td) {
+  padding: 16px !important;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.comparisonTable :global(.ant-table-tbody > tr:hover > td) {
+  background-color: #f8fafc;
+}
+
+.featureName {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #1e293b;
+}
+
+@media (max-width: 1024px) {
+  .tableContainer {
+    margin: 0 -40px;
+    padding: 0 40px;
+  }
+}

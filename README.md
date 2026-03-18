@@ -1,2 +1,25 @@
-# empflow---------frontend
-EmpFlow - 엔터프라이즈 직원 관리 플랫폼 — 중소·중견기업의 복잡한 인사관리 프로세스를 명확하고 안전하게 통합하여, HR 담당자와 경영진이 수작업과 레거시 시스템의 부담에서 벗어나 실시간 데이터 기반의 확신 있는 의사결정을 내릴 수 있도록 지원합니다. 행정 업무 70% 감소, HR 생산성 3배 향상이라는 구체적 ROI를 초기 3개월 내에 체감할 수 있는 신뢰감 있는 파트너로서의 위치를 확보합니다.
+# EmpFlow - 엔터프라이즈 직원 관리 플랫폼
+
+중소·중견기업의 복잡한 인사관리 프로세스를 명확하고 안전하게 통합하여, HR 담당자와 경영진이 수작업과 레거시 시스템의 부담에서 벗어나 실시간 데이터 기반의 확신 있는 의사결정을 내릴 수 있도록 지원합니다. 행정 업무 70% 감소, HR 생산성 3배 향상이라는 구체적 ROI를 초기 3개월 내에 체감할 수 있는 신뢰감 있는 파트너로서의 위치를 확보합니다.
+
+## Tech Stack
+
+- React 18 + TypeScript
+- Vite
+- Ant Design 5
+- React Router 7
+- Zustand (state management)
+- Axios (HTTP client)
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
