@@ -109,6 +109,15 @@ const AppSider: React.FC<AppSiderProps> = ({ collapsed }) => {
     [navigate]
   );
 
+  // 현재 경로에 맞는 selectedKeys 결정
+  const getSelectedKeys = (): string[] => {
+    const path = location.pathname;
+    if (path.startsWith('/admin/')) {
+      return [path, 'admin'];
+    }
+    return [path];
+  };
+
   return (
     <Layout.Sider
       collapsed={collapsed}
@@ -119,17 +128,17 @@ const AppSider: React.FC<AppSiderProps> = ({ collapsed }) => {
         overflowY: 'auto',
       }}
       collapsedWidth={80}
+      theme="light"
     >
       <Menu
-        mode="inline"
         items={menuItems}
-        selectedKeys={[location.pathname]}
+        selectedKeys={getSelectedKeys()}
+        mode="inline"
         style={{
           border: 'none',
-          background: '#FFFFFF',
-          paddingTop: '16px',
+          padding: '16px 0',
         }}
-        theme="light"
+        className="app-menu"
       />
     </Layout.Sider>
   );
