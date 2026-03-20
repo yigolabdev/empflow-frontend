@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Layout, Menu, Empty } from 'antd';
+import { Layout, Menu } from 'antd';
 import {
   DashboardOutlined,
   TeamOutlined,
@@ -121,24 +121,24 @@ const AppSider: React.FC<AppSiderProps> = ({ collapsed }) => {
   return (
     <Layout.Sider
       collapsed={collapsed}
-      width={256}
       style={{
         background: '#FFFFFF',
         borderRight: '1px solid #E2E8F0',
+        position: 'sticky',
+        top: 64,
+        left: 0,
+        height: 'calc(100vh - 64px)',
         overflowY: 'auto',
       }}
-      collapsedWidth={80}
-      theme="light"
     >
       <Menu
-        items={menuItems}
-        selectedKeys={getSelectedKeys()}
         mode="inline"
+        selectedKeys={getSelectedKeys()}
+        items={menuItems}
         style={{
           border: 'none',
-          padding: '16px 0',
+          backgroundColor: '#FFFFFF',
         }}
-        className="app-menu"
       />
     </Layout.Sider>
   );
